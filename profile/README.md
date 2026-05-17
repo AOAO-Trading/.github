@@ -1,6 +1,6 @@
 # AOAO Trading
 
-![schema](assets/aoao_trading.png)
+![](assets/aoao_schema.png)
 
 ## Service description
 ### API message reader and normalizer service
