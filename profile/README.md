@@ -2,6 +2,7 @@
 
 Event-driven algorithmic trading platform for crypto spot markets. We ingest live exchange data, run multiple strategy instances in parallel, route orders through a shared OMS, and close the loop with portfolio state back into every strategy.
 
+![](assets/aoao_schema.png)
 
 
 ## Architecture
