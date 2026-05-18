@@ -8,14 +8,6 @@ Event-driven algorithmic trading platform for crypto spot markets. We ingest liv
 
 The diagram above is the current system map (`aoao_schema.png`, replacing the older `architecture.png`). Exchanges sit on the left, Kafka-backed services in the middle, portfolio and UI on the right. FlatBuffers schemas in `**shared**` define every wire message between C++ and Rust.
 
-```
-Binance WS
-  -> md_reader_* -> md_mq
-  -> strategy_* -> order_mq -> order_gateway -> oms_sink_mq -> OMS
-  -> portfolio_engine -> position_updates -> strategy_* + portfolio_monitor
-  -> order_status_stream_handler -> oms_flags_mq ("ready")
-```
-
 Brokers: `md_mq` (market data), `order_mq` (orders + positions), `oms_flags_mq` (readiness), `oms_sink_mq` (gateway / OMS / fills).
 
 > [!IMPORTANT]
