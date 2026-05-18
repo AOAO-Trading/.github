@@ -61,8 +61,6 @@ Parallel analytics path. Ingests trades and klines from Kafka, can poll the Orde
 
 **Portfolio monitor (`portfolio_monitor`).** Subscribes to position updates, persists snapshots in Postgres, and pushes live state over WebSocket for dashboards.
 
-**Trading monitor (`trading_monitor`).** Broader desk view: wished orders, execution events, balances, mark prices, merged from Kafka and exchange streams. Can disable or flag strategies when risk rules fire (for example max loss).
-
 **Front-end (`front-end`).** Gradio UI over portfolio and monitor endpoints so operators see open positions, PnL, and history.
 
 **Authentication (`authentication`).** FastAPI login and token validation for gated access to the UI or other HTTP entry points.
