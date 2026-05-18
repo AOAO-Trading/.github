@@ -86,6 +86,5 @@ Docker Compose for the full pipeline, `.env` topic names, per-symbol md reader T
 | [database](https://github.com/AOAO-Trading/database)                                       | Python              |
 | [front-end](https://github.com/AOAO-Trading/front-end)                                     | Python              |
 | [authentication](https://github.com/AOAO-Trading/authentication)                           | Python              |
-| [trading_monitor](https://github.com/AOAO-Trading/trading_monitor)                         | Rust                |
 
 
